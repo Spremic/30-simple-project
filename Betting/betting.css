@@ -1,0 +1,271 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game-container {
+  display: none;
+}
+
+.form-container,
+.game-container {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 800px;
+}
+
+.form-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #ff6f61;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1.2em;
+  margin: 10px 0 5px;
+  color: #ff6f61;
+}
+
+input {
+  font-size: 1.2em;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #ff6f61;
+  border-radius: 10px;
+  width: 40%;
+}
+
+input:focus {
+  outline: none;
+}
+
+.bet-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.bet-button {
+  font-size: 1.5em;
+  color: #ffffff;
+  background-color: #ff6f61;
+  border: none;
+  border-radius: 15px;
+  padding: 15px 30px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.bet-button:hover {
+  background-color: #ff3b2f;
+}
+
+.submit-button {
+  font-size: 1.2em;
+  color: #ffffff;
+  background-color: #ff3b2f;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button:hover {
+  background-color: #ff6f61;
+}
+
+.game-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #ff6f61;
+}
+
+.players {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffecd2;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 30%;
+}
+
+.player img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.player-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #ff6f61;
+}
+
+.player-balance {
+  font-size: 1em;
+  color: #333333;
+}
+
+.player-number {
+  width: 90%;
+  height: 35px;
+  margin-top: 20px;
+}
+
+.number-display {
+  font-size: 4em;
+  font-weight: bold;
+  color: #ff6f61;
+  background: #ffecd2;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.new-round-button {
+  font-size: 1.2em;
+  color: #ffffff;
+  background-color: #ff6f61;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.new-round-button:hover {
+  background-color: #ff3b2f;
+}
+
+/* New styles for player input fields */
+.player-input {
+  font-size: 1em;
+  padding: 8px;
+  margin-top: 10px;
+  border: 2px solid #ff6f61;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.player-input:focus {
+  outline: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 800px) {
+  .input-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .bet-buttons {
+    gap: 10px;
+  }
+
+  .players {
+    flex-direction: column;
+  }
+
+  .player {
+    margin-bottom: 20px;
+    width: 70%;
+  }
+
+  .number-display {
+    font-size: 3em;
+    padding: 15px;
+  }
+
+  .new-round-button {
+    font-size: 1em;
+    padding: 8px 16px;
+  }
+
+  .player-input {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .game-title {
+    font-size: 1.8em;
+  }
+
+  .number-display {
+    font-size: 2.5em;
+    padding: 10px;
+  }
+
+  .player img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .player-name {
+    font-size: 1em;
+  }
+
+  .player-balance {
+    font-size: 0.9em;
+  }
+
+  .new-round-button {
+    font-size: 0.9em;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 450px) {
+  .player {
+    width: 90%;
+  }
+
+  input {
+    width: 100%;
+  }
+}

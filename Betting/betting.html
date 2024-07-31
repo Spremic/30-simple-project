@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gambling Simulation</title>
+    <link rel="stylesheet" href="betting.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1 class="form-title">Enter Player Names</h1>
+
+      <form id="player-form">
+        <label for="playerOne">Player 1 Name:</label>
+        <input type="text" id="playerOne" name="playerOne" required />
+
+        <label for="playerTwo">Player 2 Name:</label>
+        <input type="text" id="playerTwo" name="playerTwo" required />
+
+        <div class="bet-buttons">
+          <button type="button" class="bet-button" data-bet="500">$500</button>
+          <button type="button" class="bet-button" data-bet="1000">
+            $1000
+          </button>
+          <button type="button" class="bet-button" data-bet="2000">
+            $2000
+          </button>
+        </div>
+
+        <button type="submit" class="submit-button">Start Game</button>
+      </form>
+    </div>
+
+    <div class="game-container">
+      <h1 class="game-title">Gambling Simulation</h1>
+
+      <div class="players">
+        <div class="player" id="playerOneContainer">
+          <img src="user.png" alt="Player 1" />
+          <p class="player-name playerOneParagraph"></p>
+          <p class="player-balance playerBalanceOne"></p>
+          <input
+            type="number"
+            class="player-number"
+            id="numberBetOne"
+            placeholder="0-100"
+          />
+        </div>
+
+        <div class="number-display">10</div>
+
+        <div class="player" id="playerTwoContainer">
+          <img src="user.png" alt="Player 2" />
+          <p class="player-name playerTwoParagraph"></p>
+          <p class="player-balance playerBalanceTwo"></p>
+          <input
+            type="number"
+            class="player-number"
+            id="numberBetTwo"
+            placeholder="0-100"
+          />
+        </div>
+      </div>
+
+      <div class="bet-container">
+        <input
+          type="number"
+          id="betAmount"
+          class="bet-input"
+          placeholder="Enter your bet"
+        />
+      </div>
+
+      <button class="new-round-button">New Round</button>
+    </div>
+
+    <script src="betting.js"></script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+body {
+  background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+
+
+.timer {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.timer-text {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.stopwatch {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.session-button {
+  background-color: #ffffff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.session-button:hover {
+  background-color: #e0e0e0;
+}
+
+@media (max-width: 600px) {
+  .timer {
+    width: 80%;
+  }
+
+  .timer-text {
+    font-size: 1.5rem;
+  }
+
+  .stopwatch {
+    font-size: 2.5rem;
+  }
+
+  .gif-container {
+    height: 150px;
+  }
+}

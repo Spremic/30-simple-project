@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ with Bootstrap</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #6d6d6d;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #fff;
+        font-weight: bolder;
+        font-size: 4rem;
+        letter-spacing: 20px;
+      }
+      .accordion-item {
+        margin-bottom: 10px;
+        background-color: #333;
+        color: #fff;
+      }
+      .accordion-item button {
+        color: #fff;
+        font-weight: bold;
+      }
+      .accordion > .card > .card-header {
+        border-bottom: 2px solid #ffffff8a;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1>FAQ</h1>
+      <div class="accordion" id="faqAccordion">
+        <!-- FAQ item 1 -->
+        <div class="card accordion-item">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                How do I get started with Bootstrap?
+              </button>
+            </h5>
+          </div>
+
+          <div
+            id="collapseOne"
+            class="collapse show"
+            aria-labelledby="headingOne"
+            data-parent="#faqAccordion"
+          >
+            <div class="card-body">
+              To get started with Bootstrap, include Bootstrap's CSS and
+              JavaScript files in your project. You can use Bootstrap's grid
+              system, components, and utilities to quickly build responsive
+              websites.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ item 2 -->
+        <div class="card accordion-item">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                What are the benefits of using Bootstrap?
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#faqAccordion"
+          >
+            <div class="card-body">
+              Bootstrap provides a responsive grid system, pre-styled
+              components, and a variety of utilities that help you build
+              consistent and mobile-friendly websites quickly.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ item 3 -->
+        <div class="card accordion-item">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Can I customize Bootstrap's styles?
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseThree"
+            class="collapse"
+            aria-labelledby="headingThree"
+            data-parent="#faqAccordion"
+          >
+            <div class="card-body">
+              Yes, you can customize Bootstrap's styles by overriding its CSS
+              classes or using Bootstrap's customization tools to modify
+              variables and components to fit your project's design
+              requirements.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ item 4 -->
+        <div class="card accordion-item">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                Is Bootstrap mobile-first?
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseFour"
+            class="collapse"
+            aria-labelledby="headingFour"
+            data-parent="#faqAccordion"
+          >
+            <div class="card-body">
+              Yes, Bootstrap is mobile-first. It is designed to ensure that
+              websites are responsive and work well on various screen sizes and
+              devices, starting with mobile devices.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ item 5 -->
+        <div class="card accordion-item">
+          <div class="card-header" id="headingFive">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                Can I use Bootstrap with other frameworks?
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseFive"
+            class="collapse"
+            aria-labelledby="headingFive"
+            data-parent="#faqAccordion"
+          >
+            <div class="card-body">
+              Yes, Bootstrap can be used with other frameworks and libraries.
+              It's flexible and can integrate with JavaScript frameworks like
+              React, Angular, and Vue.js, among others.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ item 6 -->
+        <div class="card accordion-item">
+          <div class="card-header" id="headingSix">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseSix"
+                aria-expanded="false"
+                aria-controls="collapseSix"
+              >
+                Where can I find more resources about Bootstrap?
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseSix"
+            class="collapse"
+            aria-labelledby="headingSix"
+            data-parent="#faqAccordion"
+          >
+            <div class="card-body">
+              You can find more resources about Bootstrap on the official
+              Bootstrap website (getbootstrap.com), including documentation,
+              examples, and community forums.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+}
+
+form {
+  display: flex;
+  margin-top: 10px;
+}
+
+input {
+  height: 42px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding-inline: 8px;
+}
+input:focus {
+  outline: none;
+}
+
+button {
+  height: 42px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+.question-mark {
+  margin-top: 10px;
+}
+.question-mark span {
+  font-size: 5rem;
+  color: #333;
+}
+
+p {
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  color: red;
+}
+p span {
+    color: #686868;
+    border-bottom: 1px solid #686868;
+    cursor: pointer;
+}
