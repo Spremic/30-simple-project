@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Percentage Calculator</title>
+    <link rel="stylesheet" href="percentage.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Percentage Calculator</h1>
+
+      <form>
+        <div class="calculator">
+          <input
+            type="number"
+            id="number1"
+            placeholder="Enter the first number"
+            class="input-field"
+          />
+
+          <span class="funny-text">is what % of</span>
+
+          <input
+            type="number"
+            id="number2"
+            placeholder="Enter the second number"
+            class="input-field"
+          />
+
+          <span class="funny-text">?</span>
+
+          <button type="submit" class="calculate-button">Calculate</button>
+
+          <div id="result" class="result"></div>
+        </div>
+      </form>
+    </div>
+
+    <script src="/percentage.js"></script>
+  </body>
+</html>

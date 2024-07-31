@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Calculator</title>
+    <link rel="stylesheet" href="inputC.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Input Calculator</h1>
+      <div class="input-section">
+        <form>
+          <input
+            type="text"
+            id="expression"
+            placeholder="Enter your expression"
+          />
+          <button id="calculate">Calculate</button>
+        </form>
+      </div>
+      <div class="result-section">
+        <p id="result">Result:</p>
+      </div>
+      <div class="legend">
+        <p><strong>Legend:</strong></p>
+        <p><span class="symbol">*</span> = Multiplication</p>
+        <p><span class="symbol">/</span> = Division</p>
+        <p><span class="symbol">+</span> = Addition</p>
+        <p><span class="symbol">-</span> = Subtraction</p>
+      </div>
+    </div>
+
+    <script src="/inputC.js"></script>
+  </body>
+</html>

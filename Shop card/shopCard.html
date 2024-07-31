@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pijaca</title>
+    <link rel="stylesheet" type="text/css" href="shopCard.css" />
+  </head>
+  <body>
+    <h1>Pijaca</h1>
+
+    <div class="container">
+      <div class="items">
+        <h2>Povrće</h2>
+
+        <div class="single-item potato">
+          <img src="img/potato.png" />
+          <div class="si-content">
+            <h3>Potato</h3>
+            <p class="price">$<span>10</span></p>
+          </div>
+          <div class="actions">
+            <input type="number" name="quantity" value="0" min="0" />
+            <button class="addCardBtn">Dodaj</button>
+          </div>
+        </div>
+
+        <div class="single-item tomato">
+          <img src="img/tomato.png" />
+          <div class="si-content">
+            <h3>Tomato</h3>
+            <p class="price">$<span>20</span></p>
+          </div>
+          <div class="actions">
+            <input type="number" name="quantity" value="0" min="0" />
+            <button class="addCardBtn">Dodaj</button>
+          </div>
+        </div>
+
+        <div class="single-item carrots">
+          <img src="img/carrot.png" />
+          <div class="si-content">
+            <h3>Carrots</h3>
+            <p class="price">$<span>30</span></p>
+          </div>
+          <div class="actions">
+            <input type="number" name="quantity" value="0" min="0" />
+            <button class="addCardBtn">Dodaj</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart">
+        <h2>Korpa</h2>
+
+        <div class="cart-items"></div>
+
+        <div class="total"></div>
+      </div>
+    </div>
+
+    <script src="shopCard.js"></script>
+  </body>
+</html>

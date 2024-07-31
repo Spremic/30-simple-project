@@ -1,0 +1,1 @@
+This project is designed by youtuber "sysecor" So all html and all CSS CODE is taken from him.

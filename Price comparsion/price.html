@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Price Comparison App</title>
+    <link rel="stylesheet" href="price.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Price Comparison</h1>
+      </header>
+      <main>
+        <section class="product-inputs">
+          <div class="product">
+            <h2>Product A</h2>
+            <input type="text" id="nameA" placeholder="Enter product name" />
+            <input type="number" id="priceA" placeholder="Enter price" />
+          </div>
+          <div class="product">
+            <h2>Product B</h2>
+            <input type="text" id="nameB" placeholder="Enter product name" />
+            <input type="number" id="priceB" placeholder="Enter price" />
+          </div>
+          <button id="compareBTN">Compare</button>
+        </section>
+        <section class="result">
+          <div class="difference">
+            <h2>Price Difference</h2>
+            <p id="price-diff"></p>
+            <p id="percentage-diff"></p>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2024 Price Comparison App</p>
+      </footer>
+    </div>
+    <script src="price.js"></script>
+  </body>
+</html>

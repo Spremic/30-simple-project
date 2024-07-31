@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #333;
+}
+
+.container {
+  text-align: center;
+  width: 98%;
+  margin-inline: auto;
+}
+
+.author h6 {
+  font-size: 1.2rem;
+  color: #ffffff96;
+  margin-bottom: 20px;
+}
+
+.quote p {
+  color: #00aeff;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+button {
+  margin-top: 20px;
+  width: 150px;
+  height: 45px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 3px solid #fff;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  transition: all 0.3s;
+}
+button:hover {
+  color: #333;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 499px) {
+  .quote p {
+    font-size: 1.5rem;
+  }
+}

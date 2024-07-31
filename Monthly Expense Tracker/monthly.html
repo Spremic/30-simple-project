@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monthly Expense Tracker</title>
+    <link rel="stylesheet" href="monthly.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="banner">
+      <h1>Monthly Expense Tracker</h1>
+      <p>Total Money: <span id="totalMoney">$0</span></p>
+    </div>
+    <div class="container">
+      <div class="left-side">
+        <h2>Add Money</h2>
+
+        <form id="addMoneyForm" class="add-money-container">
+          <div class="form-group">
+            <label for="add-amount">Amount:</label>
+            <input
+              type="number"
+              id="addAmount"
+              placeholder="Enter amount"
+              class="ammount-input"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="add-description">Description:</label>
+            <input
+              type="text"
+              id="add-description"
+              placeholder="Enter description"
+              class="description-input"
+              required
+            />
+          </div>
+          <button id="add-button">Add</button>
+        </form>
+
+        <ul id="addList" class="transaction-list"></ul>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="right-side">
+        <h2>Subtract Money</h2>
+
+        <form id="substractForm" class="substract-form-container">
+          <div class="form-group">
+            <label for="subtract-amount">Amount:</label>
+            <input
+              type="number"
+              id="subtractAmount"
+              placeholder="Enter amount"
+              class="ammount-input"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="subtract-description">Description:</label>
+            <input
+              type="text"
+              id="subtract-description"
+              placeholder="Enter description"
+              class="description-input"
+              required
+            />
+          </div>
+
+          <button id="subtract-button">Subtract</button>
+        </form>
+
+        <ul id="subtractList" class="transaction-list"></ul>
+      </div>
+    </div>
+
+    <script src="/monthly.js"></script>
+  </body>
+</html>
